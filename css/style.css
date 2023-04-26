@@ -229,6 +229,18 @@ main .search:hover {
     font-size: 20px;
 }
 
+.search .mic-i {
+    width:35px;
+    height: 21px;
+    margin-right: 10px;
+}
+
+.search .cam-i {
+    width: 21px;
+    height: 18px;
+
+}
+
 main .search-btn button {
     padding: 10px 14px;
     background-color: #f8f9fa;
