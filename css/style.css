@@ -1,52 +1,306 @@
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	vertical-align: baseline;
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    vertical-align: baseline;
 }
 
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
 }
 
 body {
-	line-height: 1;
+    line-height: 1;
 }
 
-ol, ul {
-	list-style: none;
+ol,
+ul {
+    list-style: none;
 }
 
-blockquote, q {
-	quotes: none;
+blockquote,
+q {
+    quotes: none;
 }
 
-blockquote::before, blockquote::after,
-q::before, q::after {
-	content: '';
-	content: none;
+blockquote::before,
+blockquote::after,
+q::before,
+q::after {
+    content: "";
+    content: none;
 }
 
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+    border-collapse: collapse;
+    border-spacing: 0;
 }
 
 /* Do not write a css rule above here! Use the space below  */
 
-
 /* Write your css below here */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    font-family: arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.container nav {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 100%;
+    padding: 12px 20px;
+}
+
+.container nav a {
+    margin: 0 10px;
+    color: #141414;
+    text-decoration: none;
+    line-height: 24px;
+    font-size: 13px;
+}
+
+
+.container nav img {
+	height: 40px;
+	display: block;
+}
+
+.container nav > img {
+    height: 25px;
+    width: 30px;
+    margin-left: 13px;
+    margin-right: 13px;
+	display: block;
+}
+
+.container nav span img {
+	border-radius: 50%;
+}
+
+.container nav > img:hover{
+	padding: 5px;
+    border-radius: 50%;
+    background-color: rgb(235 230 230);
+	height: 35px;
+}
+
+
+.container nav img:hover {
+    padding: 5px;
+    border-radius: 50%;
+    background-color: rgb(235 230 230);
+}
+
+main {
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    align-items: center;
+    height: 50vh;
+    margin-bottom: 150px;
+}
+
+main .search {
+    width: 560px;
+    padding: 10px 12px;
+    display: flex;
+    align-items: center;
+    border-radius: 110px;
+    justify-content: space-between;
+    border: 2px solid #dfe1e5;
+}
+
+main .search:hover {
+    box-shadow: 0 1px 6px rgb(32 33 36 / 28%);
+}
+
+.search input {
+    flex: 1;
+    padding: 5px;
+    outline: none;
+    border: none;
+}
+
+.search .search-i {
+	color: #9aa0a6;
+    font-size: 20px;
+}
+
+.search .mic-i {
+    width:35px;
+    height: 21px;
+    margin-right: 10px;
+}
+
+.search .cam-i {
+    width: 21px;
+    height: 18px;
+
+}
+
+main .search-btn button {
+    padding: 10px 14px;
+    background-color: #f8f9fa;
+    border: none;
+    margin-right: 5px;
+    cursor: pointer;
+	transition: all 1ms ease-in-out;
+}
+
+main .languages a {
+	color: #1a0dab;
+	text-decoration: none;
+	margin-right: 8px;
+}
+
+
+main .search-btn button:hover {
+    border: 1px solid #f8f9fa;
+    box-shadow: 0 0 2px 1px rgb(0 0 0 / 20%);
+}
+
+main .languages {
+    font-size: 13px;
+}
+
+
+
+footer {
+    background-color: #f2f2f2;
+    display: flex;
+    flex-direction: column;
+}
+
+footer > div {
+    padding: 18px;
+    color: #70757a;
+}
+
+footer .nigeria {
+    border-bottom: 1px solid #dadce0;
+    font-size: 15px;
+}
+
+footer .bottom {
+    display: flex;
+    justify-content: space-between;
+}
+
+footer .bottom a {
+    text-decoration: none;
+    color: #70757a;
+    font-size: 14px;
+    margin-right: 12px;
+}
+
+main .languages a:hover {
+	text-decoration: underline;
+}
+
+.container nav a:hover {
+	text-decoration: underline;
+}
+
