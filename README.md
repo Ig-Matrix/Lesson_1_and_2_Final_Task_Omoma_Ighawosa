@@ -1,5 +1,7 @@
 ##Google Homepage Clone
 
+##You can view the live site here : https://ig-matrix.github.io/Lesson_1_and_2_Final_Task_Omoma_Ighawosa/
+
 ##How to run/test this project
 
 ##ensure you have git installed properly on your machine
